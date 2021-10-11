@@ -1,0 +1,87 @@
+﻿<Page
+    x:Class="HoloSuite.source.features.Fake_Info"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HoloSuite.source.features"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
+    mc:Ignorable="d"
+    muxc:BackdropMaterial.ApplyToRootOrPageBackground="True">
+
+    <ScrollViewer>
+        <StackPanel Width="500" Spacing="10">
+            <Grid CornerRadius="8" Padding="22" HorizontalAlignment="Center" Width="500" BorderThickness="1"
+              Background="{ThemeResource LayerFillColorDefaultBrush}" BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="350*" />
+                    <ColumnDefinition Width="100" />
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Spacing="10" Grid.Column="0">
+                    <StackPanel Orientation="Horizontal" Spacing="36">
+                        <TextBlock FontWeight="SemiBold">Name</TextBlock>
+                        <TextBlock x:Name="PersonName">Name</TextBlock>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" Spacing="39">
+                        <TextBlock FontWeight="SemiBold">Email</TextBlock>
+                        <TextBlock x:Name="Email">Email</TextBlock>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" Spacing="9">
+                        <TextBlock FontWeight="SemiBold">Username</TextBlock>
+                        <TextBlock x:Name="Username">Username</TextBlock>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" Spacing="14">
+                        <TextBlock FontWeight="SemiBold">Password</TextBlock>
+                        <TextBlock x:Name="Password">Password</TextBlock>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" Spacing="33">
+                        <TextBlock FontWeight="SemiBold">Phone</TextBlock>
+                        <TextBlock x:Name="Phone">Phone</TextBlock>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" Spacing="13">
+                        <TextBlock FontWeight="SemiBold">Company</TextBlock>
+                        <TextBlock x:Name="Company">Company</TextBlock>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" Spacing="54">
+                        <TextBlock FontWeight="SemiBold">Zip</TextBlock>
+                        <TextBlock x:Name="Zip">Zip</TextBlock>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" Spacing="30">
+                        <TextBlock FontWeight="SemiBold">Adress</TextBlock>
+                        <TextBlock x:Name="Adress">Adress</TextBlock>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" Spacing="42">
+                        <TextBlock FontWeight="SemiBold">Date</TextBlock>
+                        <TextBlock x:Name="Date">Date</TextBlock>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" Spacing="47">
+                        <TextBlock FontWeight="SemiBold">City</TextBlock>
+                        <TextBlock x:Name="City">City</TextBlock>
+                    </StackPanel>
+                </StackPanel>
+                <Button x:Name="Regenerate" Click="Regenerate_Click" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Top">Regenerate</Button>
+            </Grid>
+
+            <Grid CornerRadius="8" Padding="22" HorizontalAlignment="Center" Width="500" BorderThickness="1"
+              Background="{ThemeResource LayerFillColorDefaultBrush}" BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="350*" />
+                    <ColumnDefinition Width="100" />
+                </Grid.ColumnDefinitions>
+
+                <TextBlock x:Name="JSON" FontFamily="Consolas">JSON</TextBlock>
+                <Button x:Name="Clopy" Click="Clopy_Click" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Top">Copy</Button>
+            </Grid>
+        </StackPanel>
+    </ScrollViewer>
+</Page>

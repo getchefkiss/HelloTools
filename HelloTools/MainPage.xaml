@@ -1,0 +1,55 @@
+﻿<Page
+    x:Class="HoloSuite.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HoloSuite"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
+    mc:Ignorable="d"
+    muxc:BackdropMaterial.ApplyToRootOrPageBackground="True">
+
+    <Page.Resources>
+        <Thickness x:Key="NavigationViewContentGridBorderThickness">0</Thickness>
+        <SolidColorBrush x:Key="NavigationViewContentBackground" Color="Transparent"></SolidColorBrush>
+    </Page.Resources>
+
+    <Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="35"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Grid x:Name="AppTitleBar" Background="Transparent">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition x:Name="LeftPaddingColumn" Width="0"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition x:Name="RightPaddingColumn" Width="0"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock x:Name="TitleBarText"
+               Grid.Column="1" 
+               Style="{StaticResource CaptionTextBlockStyle}" 
+               Margin="12, 8, 0, 0" />
+            </Grid>
+
+            <muxc:NavigationView x:Name="Nav" ItemInvoked="Nav_ItemInvoked" IsPaneOpen="False" AlwaysShowHeader="True" Canvas.ZIndex="0"
+                                Grid.Row="1" IsBackButtonVisible="Collapsed" IsSettingsVisible="False" Header="Home">
+                <muxc:NavigationView.MenuItems>
+                    <muxc:NavigationViewItem x:Name="Home" Icon="Home" Content="Home" IsSelected="True" />
+                    <muxc:NavigationViewItemSeparator />
+                    <muxc:NavigationViewItem x:Name="Fake_Info" Icon="Contact" Content="Fake Info" />
+                    <muxc:NavigationViewItem x:Name="Keycodes" Icon="Keyboard" Content="Keycodes" />
+                    <muxc:NavigationViewItem x:Name="Lorem_Ipsum" Icon="AlignLeft" Content="Lorm Ipsum" />
+                    <muxc:NavigationViewItem x:Name="Symbols" Icon="FontSize" Content="Symbols" />
+                </muxc:NavigationView.MenuItems>
+
+                <muxc:NavigationView.FooterMenuItems>
+                    <muxc:NavigationViewItem x:Name="Feedback" Icon="Comment" Content="Feedback" />
+                </muxc:NavigationView.FooterMenuItems>
+
+                <Frame x:Name="Content" />
+            </muxc:NavigationView>
+        </Grid>
+    </Grid>
+</Page>
