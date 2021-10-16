@@ -36,7 +36,11 @@ namespace HoloSuite.source.features
             Content.Visibility = Visibility.Visible; 
 
             Keycode.Text = args.KeyCode.ToString();
-            Key.Text = "?";
+            Key.Text = "�";
+
+            IsCTRL.Text = IsCtrlKeyPressed() ? "Yes" : "No";
+            IsWindows.Text = IsWindowsKeyPressed() ? "Yes" : "No";
+            IsShift.Text = IsShiftKeyPressed() ? "Yes" : "No";
         }
     }
 }

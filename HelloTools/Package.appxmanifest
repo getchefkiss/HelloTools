@@ -7,15 +7,15 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="63333StoneSoftwareCo.Holo-Suite"
+    Name="63333StoneSoftwareCo.HelloTools"
     Publisher="CN=A9298D54-5B3A-442B-AEC2-4BC74A653345"
-    Version="0.0.4.0" />
+    Version="0.0.1.0" />
 
   <mp:PhoneIdentity PhoneProductId="3b5a04e6-71df-420d-a11c-a1e083c52ee1" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
-    <DisplayName>Holo-Suite</DisplayName>
-    <PublisherDisplayName>Abstract Co.</PublisherDisplayName>
+    <DisplayName>HelloTools</DisplayName>
+    <PublisherDisplayName>HelloTools</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 
@@ -32,13 +32,16 @@
       Executable="$targetnametoken$.exe"
       EntryPoint="HoloSuite.App">
       <uap:VisualElements
-        DisplayName="HelloTools"
+        DisplayName="HelloTools - Work in Progress"
         Square150x150Logo="Assets\Square150x150Logo.png"
         Square44x44Logo="Assets\Square44x44Logo.png"
-        Description="HelloTools"
+        Description="Made to make the lifes of devs easier."
         BackgroundColor="transparent">
         <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"/>
         <uap:SplashScreen Image="Assets\SplashScreen.png" />
+        <uap:InitialRotationPreference>
+          <uap:Rotation Preference="landscape"/>
+          <uap:Rotation Preference="landscapeFlipped"/></uap:InitialRotationPreference>
       </uap:VisualElements>
     </Application>
   </Applications>

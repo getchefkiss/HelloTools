@@ -12,22 +12,50 @@
             Press a key...
         </TextBlock>
 
-        <StackPanel Spacing="10" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" x:Name="Content" Visibility="Collapsed">
-            <Grid CornerRadius="8" Padding="22" Width="334" Height="172" BorderThickness="1"
-              Background="{ThemeResource LayerFillColorDefaultBrush}" BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}">
-                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
-                    <TextBlock FontWeight="SemiBold" FontSize="12">Keycode</TextBlock>
-                    <TextBlock FontWeight="Bold" FontSize="41" x:Name="Keycode">40</TextBlock>
-                </StackPanel>
-            </Grid>
+        <StackPanel Orientation="Vertical" x:Name="Content" Spacing="10">
+            <StackPanel Spacing="10" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top">
+                <Grid CornerRadius="8" Padding="22" Width="334" Height="172" BorderThickness="1"
+                      Background="{ThemeResource LayerFillColorDefaultBrush}" BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}">
+                    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                        <TextBlock FontWeight="SemiBold" FontSize="12" TextAlignment="Center">Keycode</TextBlock>
+                        <TextBlock FontWeight="Bold" FontSize="41" x:Name="Keycode">40</TextBlock>
+                    </StackPanel>
+                </Grid>
 
-            <Grid CornerRadius="8" Padding="22" Width="334" Height="172" BorderThickness="1"
-              Background="{ThemeResource LayerFillColorDefaultBrush}" BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}">
-                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
-                    <TextBlock FontWeight="SemiBold" FontSize="12" HorizontalAlignment="Center">Key</TextBlock>
-                    <TextBlock FontWeight="Bold" FontSize="41" x:Name="Key">C</TextBlock>
-                </StackPanel>
-            </Grid>
+                <Grid CornerRadius="8" Padding="22" Width="334" Height="172" BorderThickness="1"
+                      Background="{ThemeResource LayerFillColorDefaultBrush}" BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}">
+                    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                        <TextBlock FontWeight="SemiBold" FontSize="12" TextAlignment="Center">Key</TextBlock>
+                        <TextBlock FontWeight="Bold" FontSize="41" x:Name="Key">�</TextBlock>
+                    </StackPanel>
+                </Grid>
+            </StackPanel>
+
+            <StackPanel Spacing="10" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top">
+                <Grid CornerRadius="8" Padding="22" Width="219" Height="172" BorderThickness="1"
+                      Background="{ThemeResource LayerFillColorDefaultBrush}" BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}">
+                    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                        <TextBlock FontWeight="SemiBold" FontSize="12" TextAlignment="Center">IsCTRL</TextBlock>
+                        <TextBlock FontWeight="Bold" FontSize="41" x:Name="IsCTRL">No</TextBlock>
+                    </StackPanel>
+                </Grid>
+
+                <Grid CornerRadius="8" Padding="22" Width="219" Height="172" BorderThickness="1"
+                      Background="{ThemeResource LayerFillColorDefaultBrush}" BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}">
+                    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                        <TextBlock FontWeight="SemiBold" FontSize="12" TextAlignment="Center">IsWindows</TextBlock>
+                        <TextBlock FontWeight="Bold" FontSize="41" x:Name="IsWindows">No</TextBlock>
+                    </StackPanel>
+                </Grid>
+
+                <Grid CornerRadius="8" Padding="22" Width="219" Height="172" BorderThickness="1"
+                      Background="{ThemeResource LayerFillColorDefaultBrush}" BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}">
+                    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                        <TextBlock FontWeight="SemiBold" FontSize="12" TextAlignment="Center">IsShift</TextBlock>
+                        <TextBlock FontWeight="Bold" FontSize="41" x:Name="IsShift">No</TextBlock>
+                    </StackPanel>
+                </Grid>
+            </StackPanel>
         </StackPanel>
     </Grid>
 </Page>
