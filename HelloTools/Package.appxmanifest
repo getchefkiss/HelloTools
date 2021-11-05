@@ -9,7 +9,7 @@
   <Identity
     Name="63333StoneSoftwareCo.HelloTools"
     Publisher="CN=A9298D54-5B3A-442B-AEC2-4BC74A653345"
-    Version="0.0.1.0" />
+    Version="2021.10.16.0" />
 
   <mp:PhoneIdentity PhoneProductId="3b5a04e6-71df-420d-a11c-a1e083c52ee1" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
